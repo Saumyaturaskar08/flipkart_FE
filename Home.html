@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Watch Store</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional CSS styles */
+        .product-card img {
+            height: 250px; /* Adjust height of product images */
+        }
+        .product-card .price {
+            font-size: 1.25rem; /* Increase font size of product prices */
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-indigo-600">Watch Store</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a class="nav-link text-indigo-600 hover:text-indigo-800" href="index.html">Home</a></li>
+                    <li><a class="nav-link text-gray-600 hover:text-gray-800" href="About.html">About Us</a></li>
+                    <li><a class="nav-link text-gray-600 hover:text-gray-800" href="register.html">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="bg-indigo-600 text-white text-center py-20">
+        <h2 class="text-4xl font-bold mb-4">Welcome to Our Watch Store</h2>
+        <p class="text-lg mb-6">Find the perfect timepiece for every occasion!</p>
+        <a href="#products" class="bg-white text-indigo-600 px-4 py-2 rounded hover:bg-gray-200">Shop Now</a>
+    </section>
+    
+    <!-- Products Section -->
+    <section id="products" class="container mx-auto mt-10">
+        <h2 class="text-2xl font-bold text-center mb-6">Featured Watches</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Product Card 1 -->
+            <div class="bg-white p-6 rounded shadow-md product-card">
+                <img class="w-full object-cover mb-4" src="https://via.placeholder.com/300" alt="Product 1">
+                <h3 class="text-xl font-bold mb-2">Elegant Silver Watch</h3>
+                <p class="text-gray-700 mb-4">Sleek and stylish watch for any occasion.</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-indigo-600 font-bold price">$199.99</span>
+                    <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Add to Cart</a>
+                </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="bg-white p-6 rounded shadow-md product-card">
+                <img class="w-full object-cover mb-4" src="https://via.placeholder.com/300" alt="Product 2">
+                <h3 class="text-xl font-bold mb-2">Classic Leather Watch</h3>
+                <p class="text-gray-700 mb-4">Timeless design with genuine leather strap.</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-indigo-600 font-bold price">$149.99</span>
+                    <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Add to Cart</a>
+                </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="bg-white p-6 rounded shadow-md product-card">
+                <img class="w-full object-cover mb-4" src="https://via.placeholder.com/300" alt="Product 3">
+                <h3 class="text-xl font-bold mb-2">Sporty Diver's Watch</h3>
+                <p class="text-gray-700 mb-4">Water-resistant and durable for adventurous souls.</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-indigo-600 font-bold price">$249.99</span>
+                    <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4 mt-10">
+        <p>&copy; 2024 Watch Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
